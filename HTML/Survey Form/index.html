@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name</label>
+        <input 
+          type="text" 
+          id="name"
+          name="name" 
+          required 
+          placeholder="Enter your Name"
+         />
+
+        <label for="email" id="email-label">Email</label>
+        <input 
+          type="email" 
+          id="email"
+          name="email" 
+          required 
+          placeholder="Enter your Email"
+         />
+
+        <label for="number" id="number-label">Age (Optional)</label>
+        <input 
+          type="number" 
+          id="number"
+          name="number" 
+          placeholder="Enter your Age"
+          min="10"
+          max="70"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="student">Student</option>
+          <option value="fulltimejob">Full-time Job</option>
+          <option value="experienced">Experienced</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recommend us to a friend?</legend>
+        <label for="recommend-yes">Yes</label>
+        <input type="radio" id="recommend-yes" name="recommend" value="yes" />
+
+        <label for="recommend-no">No</label>
+        <input type="radio" id="recommend-no" name="recommend" value="no" />
+
+        <label for="recommend-maybe">Maybe</label>
+        <input type="radio" id="recommend-maybe" name="recommend" value="maybe" />
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like to see improved?</legend>
+        <label for="frontend">Frontend</label>
+        <input type="checkbox" id="frontend" name="frontend" value="frontend" />
+
+        <label for="datastructures">Data Structures</label>
+        <input type="checkbox" id="datastructures" name="datastructures" value="datastructures" />
+
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="python" value="python" />
+      </fieldset>
+
+      <fieldset>
+        <label for="comments">Your Comments:</label>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your feedback here..."></textarea>
+      </fieldset>
+
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
