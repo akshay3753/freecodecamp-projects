@@ -1,0 +1,39 @@
+body {
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.color-grid {
+  margin-top: 30px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual color styles */
+.color1 {
+  background-color: #000000; /* hex */
+}
+
+.color2 {
+  background-color: rgb(255, 100, 100); /* rgb */
+}
+
+.color3 {
+  background-color: orange; /* keyword */
+}
+
+.color4 {
+  background-color: hsl(200, 70%, 70%); /* hsl */
+}
+
+.color5 {
+  background-color: #8e44ad; /* hex or any value */
+}
