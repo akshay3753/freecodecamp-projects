@@ -83,3 +83,7 @@ section:hover{
 section:target {
   display: block;
 }
+
+h1 {
+  color: pink;
+}
